@@ -51,7 +51,7 @@ src_prepare() {
 	then
 		S="${S}/trunk"
 	else
-		S="${S}/tags/TMUX_$(echo ${PV}|sed -e \"s/\./_/g\")"
+		S="${S}/tags/TMUX_"$(echo ${PV}|sed -e "s/\./_/g")
 	fi
 	cd ${S} || die "cd ${S} failed"
 	epatch "${FILESDIR}/${PN}-fbterm.patch" # support 256color on fbterm
