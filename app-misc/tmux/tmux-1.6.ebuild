@@ -55,7 +55,7 @@ src_prepare() {
 	fi
 	cd ${S} || die "cd ${S} failed"
 	epatch "${FILESDIR}/${PN}-fbterm.patch" # support 256color on fbterm
-	./autogen.sh || die "autogen.sh failed"
+	sh ./autogen.sh || die "autogen.sh failed"
 	# look for config file in the prefix
 	sed -i -e '/SYSTEM_CFG/s:"/etc:"'"${EPREFIX}"'/etc:' tmux.h || die "sed failed"
 	# and don't just add some includes
