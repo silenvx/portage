@@ -9,9 +9,10 @@ laymanを使うと非常に簡単です
   
     # vim /etc/layman/layman.cfg  
 設定ファイルを開いて  
-    overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml  
+
+overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml  
 の下に最初にスペースを空けて  
-    https://raw.github.com/silenvx/portage/master/overlays.xml  
+https://raw.github.com/silenvx/portage/master/overlays.xml  
 を追加して  
   
     # layman -L|grep silenvx  
@@ -21,3 +22,7 @@ laymanを使うと非常に簡単です
 laymanに登録してください  
   
 後はいつも通りemergeを使うだけです  
+このlaymanだけをアップデートしたい場合は  
+  
+    # layman --sync silenvx
+これで可能です
