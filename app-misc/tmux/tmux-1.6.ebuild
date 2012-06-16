@@ -15,7 +15,7 @@ EGIT_REPO_URI="git://github.com/ThomasAdam/tmux.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86"
 IUSE="vim-syntax"
 
 DEPEND="
