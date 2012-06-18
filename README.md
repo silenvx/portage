@@ -22,7 +22,7 @@ https://raw.github.com/silenvx/portage/master/overlays.xml
 laymanに登録してください  
   
 後はいつも通りemergeを使うだけです  
-このlaymanだけをアップデートしたい場合は  
+このoverlaysだけをアップデートしたい場合は  
   
     # layman --sync silenvx
 これで可能です
