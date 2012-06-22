@@ -25,8 +25,6 @@ DEPEND="media-gfx/fontforge
 	media-fonts/inconsolata"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/Ricty"
-
 FONT_SUFFIX="ttf"
 FONT_S="${S}"
 
