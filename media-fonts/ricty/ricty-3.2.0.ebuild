@@ -9,12 +9,11 @@ DESCRIPTION="A beautiful sans-serif monotype Japanese font designed for code lis
 HOMEPAGE="http://save.sys.t.u-tokyo.ac.jp/~yusa/fonts/ricty.html"
 SRC_URI=""
 
-if [ "${PV}" == "9999" ];then
-	EGIT_BRANCH="master"
-else
-	EGIT_BRANCH="${PV}"
-fi
 EGIT_REPO_URI="git://github.com/yascentur/Ricty.git"
+EGIT_BRANCH="master"
+if [ "${PV}" != "9999" ];then
+	EGIT_COMMIT="${PV}"
+fi
 
 LICENSE="public-domain"
 SLOT="0"
@@ -37,6 +36,6 @@ RESTRICT="strip binchecks"
 src_compile(){
 	sh ricty_generator.sh \
 	"${EPREFIX}/usr/share/fonts/inconsolata/Inconsolata.otf" \
-	"${EPREFIX}/usr/share/fonts/mix-mplus-ipa/Migu-1M-regular.ttf" \
-	"${EPREFIX}/usr/share/fonts/mix-mplus-ipa/Migu-1M-bold.ttf" || die "failed ricty_generator.sh"
+	"${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-regular.ttf" \
+	"${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-bold.ttf" || die "failed ricty_generator.sh"
 }
