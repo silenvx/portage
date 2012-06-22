@@ -23,7 +23,7 @@ IUSE=""
 
 DEPEND="media-gfx/fontforge
 	>=media-fonts/mix-mplus-ipa-20111002
-	media-fonts/inconsolate"
+	media-fonts/inconsolata"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_PN}"
