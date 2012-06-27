@@ -5,7 +5,7 @@
 EAPI=4
 inherit font
 
-MY_PV="${PV}-2"
+MY_PV="${PVR/-r/-}"
 
 DESCRIPTION="Mixing mplus and IPA fonts"
 HOMEPAGE="http://mix-mplus-ipa.sourceforge.jp/"
