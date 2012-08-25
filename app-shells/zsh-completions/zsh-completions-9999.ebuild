@@ -31,6 +31,7 @@ fi
 S="${WORKDIR}/${PN}"
 
 src_install() {
+	cd src
 	insinto /usr/share/zsh/site-functions
 	use ack && doins _ack
 	use adb && doins _adb
